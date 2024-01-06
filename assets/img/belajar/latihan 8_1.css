@@ -1,0 +1,40 @@
+body {
+    display: grid;
+    place-content: center;
+}
+
+body {
+    display: grid;
+    place-content: center;
+}
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: "side nav nav nav" "side main main main" "side main main main";
+    grid-template-columns: 200px auto;
+    grid-template-rows: 100px auto;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.side {
+    grid-area: side;
+    background-color: #ff9898;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: #ffde98;
+}
+
+.main {
+    grid-area: main;
+    background-color: #e4e4e4;
+}
